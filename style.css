@@ -118,7 +118,7 @@
 }
 
 #searchBox{
-  margin:5px 10px;
+  margin:5px 20px;
   height: 40px;
   width: 80vw;
   background-color: var(--lGrey);
@@ -585,4 +585,20 @@ footer{
   footer{
     padding: 0px 15vw;
   }
+  .navbar{
+    padding: 0px 10vw;
+  }
+}
+
+
+
+.accountMain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formDiv{
+  display: flex;
+  width: 80vw;
 }
