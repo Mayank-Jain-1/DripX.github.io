@@ -1,0 +1,13 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  --orange: "#ff5722";
+  --lOrange: "#ff7e55";
+  --dOrange: "#ee3900";
+  --grey: "#303841";
+  --lGrey: "#eeeeee";
+}
+
