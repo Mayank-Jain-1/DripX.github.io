@@ -4,10 +4,20 @@
   box-sizing: border-box;
 }
 :root{
-  --orange: "#ff5722";
-  --lOrange: "#ff7e55";
-  --dOrange: "#ee3900";
-  --grey: "#303841";
-  --lGrey: "#eeeeee";
+  --orange: #ff5722;
+  --lOrange: #ff7e55;
+  --dOrange: #ee3900;
+  --grey: #565d64;
+  --lGrey: #eeeeee;
+  --navbarHeight: 64px;
 }
 
+.navbar{
+  width: 100vw;
+  background: linear-gradient(160deg, #555b63, #4f565d);
+  height: var(--navbarHeight);
+}
+
+.navLogo{
+  height: var(--navbarHeight);
+}
