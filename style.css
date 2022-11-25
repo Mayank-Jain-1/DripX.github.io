@@ -14,10 +14,62 @@
 
 .navbar{
   width: 100vw;
-  background: linear-gradient(160deg, #555b63, #4f565d);
+  background : linear-gradient(to right, #3c444c 0% , #535961 16%);
   height: var(--navbarHeight);
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  box-shadow: 0px 3px 30px 0px rgba(0,0,0,0.4);
 }
+
+
 
 .navLogo{
   height: var(--navbarHeight);
 }
+
+#navigationDiv{
+  display: flex;
+  align-items: center;
+}
+
+.navigationList{
+  margin-right: 10px;
+  list-style: none;
+  display: flex;
+}
+
+.navigationLink{
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: var(--lGrey);
+  list-style: none;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.navigationLink:hover{
+  color: var(--lOrange);
+  transition: smooth;
+  transition: 0.2s;
+}
+
+.navigationLink i{
+  font-size: 20px;
+  padding-right: 7px;
+}
+
+@media (width<600px){
+  .navigationList{
+    margin: 0;
+  }
+
+  .navigationLink span{
+    display: none;
+  }
+  .navigationLink{
+    margin: 7px;    
+  }
+} 
