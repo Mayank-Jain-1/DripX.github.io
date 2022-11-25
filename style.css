@@ -85,7 +85,6 @@
 
 #coverImg{
   width: 100%;
-  /* filter: blur(0.5px); */
 }
 
 .coverText:hover {
@@ -114,6 +113,38 @@
   font-size: 18px;
 }
 
+.products{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  background-color:#ee3900;
+}
+.products h1{
+  font-size: 4rem;
+  margin-bottom: 40px;
+}
+
+.productsList{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.productItem{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 350px;
+  background-color: aqua;
+  text-align: center;
+  font-size: 25px;
+}
+
+.products img{
+  width: 100%;
+}
 
 @media (width > 1024px) {
   #cover{
