@@ -128,6 +128,8 @@
 .productsList{
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .productItem{
@@ -143,8 +145,7 @@
 }
 
 .products img{
-  width: 400px;
-  height: 270px;
+  width: 100%;
 }
 
 .products h4{
