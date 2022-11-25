@@ -62,18 +62,6 @@
   padding-right: 7px;
 }
 
-@media (width<600px){
-  .navigationList{
-    margin: 0;
-  }
-
-  .navigationLink span{
-    display: none;
-  }
-  .navigationLink{
-    margin: 7px;    
-  }
-} 
 
 .main{
   display: flex;
@@ -126,6 +114,7 @@
   font-size: 18px;
 }
 
+
 @media (width > 1024px) {
   #cover{
     width: 1024px;
@@ -138,5 +127,15 @@
 @media (width < 768px){
   .coverText{
     font-size: 5vw;
+  }
+  .navigationList{
+    margin: 0;
+  }
+
+  .navigationLink span{
+    display: none;
+  }
+  .navigationLink{
+    margin: 7px;    
   }
 }
