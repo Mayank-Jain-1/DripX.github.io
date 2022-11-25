@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 :root{
   --orange: #ff5722;
   --lOrange: #ff7e55;
@@ -82,7 +83,12 @@
 
 #cover{
   width: 90vw;
-  margin-top: 50px;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+#coverContent{
+  width: 100%;
   display: flex;
   position: relative;
   justify-content: center;
@@ -103,4 +109,27 @@
   justify-content: center;
   position: absolute;
   font-size: 3vw;
+}
+
+.coverDesc{
+  text-align: center;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-color: var(--lGrey);
+  padding: 20px;
+  font-size: 18px;
+}
+
+@media (width > 1024px) {
+  #cover{
+    width: 1024px;
+  }
+  .coverText{
+    font-size: 40px;
+  }
+}
+
+@media (width < 768px){
+  .coverText{
+    font-size: 5vw;
+  }
 }
