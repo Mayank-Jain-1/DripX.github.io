@@ -122,7 +122,7 @@
 }
 .products h1{
   font-size: 4rem;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .productsList{
@@ -166,6 +166,13 @@
   padding: 10px 12px;
   border-radius: 10px;
   font-size: 12px;
+  transition: 0.2s;
+}
+
+.products a:hover{
+  background-color: var(--orange);
+  box-shadow: 0px 2px 2px 0px grey;
+  transition: 0.2s;
 }
 
 @media (width > 1024px) {
@@ -190,5 +197,17 @@
   }
   .navigationLink{
     margin: 7px;    
+  }
+  .productItem{
+    width: 90vw;
+  }
+  .products h1{
+    font-size: 40px;
+  }
+}
+
+@media (786px< width <880px) {
+  .productItem{
+    width: 300px;
   }
 }
