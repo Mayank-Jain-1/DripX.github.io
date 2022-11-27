@@ -226,19 +226,9 @@
 }
 
 
-.carouselNav{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  height: 100px;
-  width: 100%; 
-  bottom: 0; 
-  text-align: center;
-}
-
 .carouselItem{
   display: none;
+  position: relative;
   background-color: var(--lGrey);
   height: 400px;
   width: 600px;
@@ -256,19 +246,46 @@
 .carouselItemSelected{
   display: block;
 }
+
+.carouselNav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 200px;
+  width: 100%; 
+  bottom: 0; 
+  text-align: center;
+}
+
 .carouselSpan{
   height: 15px;
   width: 15px;
+  max-height: 3vw;
+  max-width: 3vw;
   display: inline-block;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   margin: 0px 5px;
   cursor: pointer;
 }
 .carouselSpanSelected{
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
+.reviewDescription{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  color:white;
+  text-align: center;
+  height: 80px;
+  background-color: rgba(0,0,0,0.6);
+  font-family: sans-serif;
+  padding: 0 20px;
+}
 
 @media (width > 1024px) {
   #cover{
@@ -301,6 +318,9 @@
   }
   .whatsNewItem{
     font-size: 14px;
+  }
+  .reviewDescription{
+    font-size: 12px;
   }
 }
 
