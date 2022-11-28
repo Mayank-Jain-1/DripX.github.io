@@ -221,11 +221,6 @@
   position: relative;
 }
 
-.carouselItem{
-  background-color: var(--lGrey);
-  height: 400px;
-  width: 600px;
-}
 
 .carouselNav{
   display: flex;
@@ -238,15 +233,28 @@
   bottom: 0; 
   text-align: center;
 }
+
+.carouselItem{
+  display: none;
+  background-color: var(--lGrey);
+  height: 400px;
+  width: 600px;
+}
+
+.carouselItemSelected{
+  display: block;
+}
 .carouselSpan{
   height: 15px;
   width: 15px;
   display: inline-block;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   margin: 0px 5px;
 }
-
+.carouselSpanSelected{
+  background-color: rgba(255, 255, 255, 0.7);
+}
 
 
 
