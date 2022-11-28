@@ -234,6 +234,8 @@
   width: 600px;
   max-width: 90vw;
   max-height: 60vw;
+  min-width: 30vw;
+  min-height: 20vw;
 }
 
 .carouselItem img{
@@ -320,7 +322,11 @@
     font-size: 14px;
   }
   .reviewDescription{
-    font-size: 12px;
+    font-size: 10px;
+    height: 50px;
+  }
+  .carouselNav{
+    height: 130px;
   }
 }
 
