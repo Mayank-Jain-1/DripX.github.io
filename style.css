@@ -197,6 +197,11 @@
   align-items: center;
 }
 
+.whatsNewContent{
+  display: flex;
+  align-items: center;
+}
+
 .whatsNewItem{
   background-color: var(--lGrey);
   padding: 20px;
@@ -204,10 +209,9 @@
   border-left: 10px solid var(--orange);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  width:90vw;
   margin-top: 10px;
   list-style: none;
-
+  margin-right: 30px;
 }
 
 @media (width > 1024px) {
