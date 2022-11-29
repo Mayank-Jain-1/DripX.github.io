@@ -217,8 +217,12 @@
 }
 
 .carousel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 90vw;
   position: relative;
+  margin-bottom: 40px;
 }
 
 
@@ -238,7 +242,16 @@
   background-color: var(--lGrey);
   height: 400px;
   width: 600px;
+  max-width: 90vw;
+  max-height: 60vw;
 }
+
+.carouselItem img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 .carouselItemSelected{
   display: block;
@@ -255,7 +268,6 @@
 .carouselSpanSelected{
   background-color: rgba(255, 255, 255, 0.7);
 }
-
 
 
 @media (width > 1024px) {
