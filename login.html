@@ -22,154 +22,156 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>DripX</title>
   </head>
-<body>
-  <nav>
-    <div class="navbar navTop">
-      <div id="logo-div" class="navItem">
-        <img src="images/Logo.png" alt="" class="navLogo" />
-      </div>
-
-      <div id="navigationDiv" class="navItem">
-        <ul class="navigationList">
-          <li id="accountsNavLink">
-            <button
-              class="navigationLink"
-              onclick="toggleDisplay('accountsDropdown')"
-            >
-              <i class="zmdi zmdi-account-o"></i>
-              <span>Account</span>
-            </button>
-            <div id="accountsDropdown" class="noDisplay">
-              <a href="login.html">Login</a>
-              <a href="login.html">Sign Up</a>
-            </div>
-          </li>
-          <li>
-            <button class="navigationLink" onclick="toggleDisplay('search')">
-              <i class="zmdi zmdi-search"></i>
-              <span>Search</span>
-            </button>
-          </li>
-          <li>
-            <a class="navigationLink" href="">
-              <i class="zmdi zmdi-favorite-outline"></i>
-              <span>Wishlist</span>
-            </a>
-          </li>
-          <li>
-            <a class="navigationLink" href="">
-              <i class="zmdi zmdi-shopping-cart"></i>
-              <span>Your Cart (2)</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div id="search" class="noDisplay">
-      <div class="searchDiv">
-        <i class="zmdi zmdi-search zmdi-hc-2x"></i>
-        <input id="searchBox" type="text" placeholder="Enter Item Name.." />
-        <button id="cancelSearch" onclick="toggleDisplay('search')">
-          Cancel
-        </button>
-      </div>
-      <div class="mostSearched">
-        <h3>Most Searched</h3>
-        <ul>
-          <li>Air Force 1</li>
-          <li>Jordan</li>
-          <li>Air Max</li>
-          <li>Blazer</li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <div class="accountMain">
-    <div class="formDiv">
-      <form action="POST" class="loginForm">
-        <h1>Login</h1>
-        <label for="Name">
-          <input type="text" name="Name" placeholder="Name">
-        </label>
-        <label for="Email">
-          <input type="text" name="Email" placeholder="Email">
-        </label>
-        <label for="Password">
-          <input type="text" name="Password" placeholder="Password">
-        </label>
-        <label for="ConfirmPassword">
-          <input type="text" name="ConfirmPassword" placeholder="ConfirmPassword">
-        </label>
-      </form>
-      <img src="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFuJTIwd29ya2luZyUyMG9uJTIwY29tcHV0ZXJ8ZW58MHx8MHx8&w=1000&q=80" alt="">
-    </div>
-  </div>
-
-  <footer>
-    <div class="footerLinks">
-      <div class="leftLinks">
-        <div class="list">
-          <a href="" class="bigLink">Find a store</a>
-          <a href="" class="bigLink">Become a member</a>
-          <a href="" class="bigLink">Sign up for email</a>
-          <a href="" class="bigLink">Send us feedback</a>
-          <a href="" class="bigLink">Student Discounts</a>
+  <body>
+    <nav>
+      <div class="navbar navTop">
+        <div id="logo-div" class="navItem">
+          <img src="images/Logo.png" alt="" class="navLogo" />
         </div>
-        <div class="list">
-          <a href="" class="bigLink">get help</a>
-          <a href="" class="link">Order Status</a>
-          <a href="" class="link">Delivery</a>
-          <a href="" class="link">Returns</a>
-          <a href="" class="link">Payment Options</a>
-          <a href="" class="link">Inquiries</a>
-          <a href="" class="link">News</a>
-        </div>
-        <div class="list">
-          <a href="" class="bigLink">Contact Us</a>
-          <a href="tel: 100" class="link" class="link">+91 7888635237</a>
-          <a href="mailto: dripx@gmail.com" class="link">dripx@gmail.com</a>
-          <a href="" class="link">Live Chat</a>
+
+        <div id="navigationDiv" class="navItem">
+          <ul class="navigationList">
+            <li id="accountsNavLink">
+              <button
+                class="navigationLink"
+                onclick="toggleDisplay('accountsDropdown')"
+              >
+                <i class="zmdi zmdi-account-o"></i>
+                <span>Account</span>
+              </button>
+              <div id="accountsDropdown" class="noDisplay">
+                <a href="login.html">Login</a>
+                <a href="login.html">Sign Up</a>
+              </div>
+            </li>
+            <li>
+              <button class="navigationLink" onclick="toggleDisplay('search')">
+                <i class="zmdi zmdi-search"></i>
+                <span>Search</span>
+              </button>
+            </li>
+            <li>
+              <a class="navigationLink" href="">
+                <i class="zmdi zmdi-favorite-outline"></i>
+                <span>Wishlist</span>
+              </a>
+            </li>
+            <li>
+              <a class="navigationLink" href="">
+                <i class="zmdi zmdi-shopping-cart"></i>
+                <span>Your Cart (2)</span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="socialLinks">
-        <a
-          target="_blank"
-          href="https://www.facebook.com/"
-          class="socialLink"
-        >
-          <i class="zmdi zmdi-facebook-box"></i>
-        </a>
-        <a
-          target="_blank"
-          href="https://www.instagram.com/xmayank_jainx/"
-          class="socialLink"
-        >
-          <i class="zmdi zmdi-instagram"></i>
-        </a>
-        <a target="_blank" href="https://twitter.com/" class="socialLink">
-          <i class="zmdi zmdi-twitter"></i>
-        </a>
-        <a target="_blank" href="https://www.youtube.com/" class="socialLink">
-          <i class="zmdi zmdi-youtube-play"></i>
-        </a>
+      <div id="search" class="noDisplay">
+        <div class="searchDiv">
+          <i class="zmdi zmdi-search zmdi-hc-2x"></i>
+          <input id="searchBox" type="text" placeholder="Enter Item Name.." />
+          <button id="cancelSearch" onclick="toggleDisplay('search')">
+            Cancel
+          </button>
+        </div>
+        <div class="mostSearched">
+          <h3>Most Searched</h3>
+          <ul>
+            <li>Air Force 1</li>
+            <li>Jordan</li>
+            <li>Air Max</li>
+            <li>Blazer</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="accountMain">
+      <div class="formDiv">
+        <img
+          width="400px"
+          src="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFuJTIwd29ya2luZyUyMG9uJTIwY29tcHV0ZXJ8ZW58MHx8MHx8&w=1000&q=80"
+          alt=""
+        />
+        <form action="POST" class="registerForm">
+          <h1>Register</h1>
+          <input type="text" name="Name" placeholder="Name" />
+          <input type="text" name="Email" placeholder="Email" />
+          <input type="text" name="Password" placeholder="Password" />
+          <input
+            type="text"
+            name="ConfirmPassword"
+            placeholder="ConfirmPassword"
+          />
+          <button>Submit</button>
+          <br>
+          <p>Have an account? Click <span><a href="">Here</a></span></p>
+        </form>
       </div>
     </div>
 
-    <div class="footerEnd">
-      <div class="copyright">
-        <i class="zmdi zmdi-pin"></i>
-        <span>India</span>
-        <p>&copy; 2022 Dripx, Inc. All Rights Reserved</p>
+    <footer>
+      <div class="footerLinks">
+        <div class="leftLinks">
+          <div class="list">
+            <a href="" class="bigLink">Find a store</a>
+            <a href="" class="bigLink">Become a member</a>
+            <a href="" class="bigLink">Sign up for email</a>
+            <a href="" class="bigLink">Send us feedback</a>
+            <a href="" class="bigLink">Student Discounts</a>
+          </div>
+          <div class="list">
+            <a href="" class="bigLink">get help</a>
+            <a href="" class="link">Order Status</a>
+            <a href="" class="link">Delivery</a>
+            <a href="" class="link">Returns</a>
+            <a href="" class="link">Payment Options</a>
+            <a href="" class="link">Inquiries</a>
+            <a href="" class="link">News</a>
+          </div>
+          <div class="list">
+            <a href="" class="bigLink">Contact Us</a>
+            <a href="tel: 100" class="link" class="link">+91 7888635237</a>
+            <a href="mailto: dripx@gmail.com" class="link">dripx@gmail.com</a>
+            <a href="" class="link">Live Chat</a>
+          </div>
+        </div>
+        <div class="socialLinks">
+          <a
+            target="_blank"
+            href="https://www.facebook.com/"
+            class="socialLink"
+          >
+            <i class="zmdi zmdi-facebook-box"></i>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.instagram.com/xmayank_jainx/"
+            class="socialLink"
+          >
+            <i class="zmdi zmdi-instagram"></i>
+          </a>
+          <a target="_blank" href="https://twitter.com/" class="socialLink">
+            <i class="zmdi zmdi-twitter"></i>
+          </a>
+          <a target="_blank" href="https://www.youtube.com/" class="socialLink">
+            <i class="zmdi zmdi-youtube-play"></i>
+          </a>
+        </div>
       </div>
-      <div class="docs">
-        <a href="" class="docsLink link">Guides</a>
-        <a href="" class="docsLink link">Terms of Sale</a>
-        <a href="" class="docsLink link">Terms of Use</a>
-        <a href="" class="docsLink link">DripX Privace Policy</a>
-      </div>
-    </div>
-  </footer>
 
-</body>
+      <div class="footerEnd">
+        <div class="copyright">
+          <i class="zmdi zmdi-pin"></i>
+          <span>India</span>
+          <p>&copy; 2022 Dripx, Inc. All Rights Reserved</p>
+        </div>
+        <div class="docs">
+          <a href="" class="docsLink link">Guides</a>
+          <a href="" class="docsLink link">Terms of Sale</a>
+          <a href="" class="docsLink link">Terms of Use</a>
+          <a href="" class="docsLink link">DripX Privace Policy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

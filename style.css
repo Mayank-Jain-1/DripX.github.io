@@ -486,17 +486,71 @@ footer{
   color: white;
   background-color: var(--orange);
 }
-@media (width > 1024px) {
-  #cover{
-    width: 1024px;
-  }
-  .coverText{
-    font-size: 40px;
-  }
-  footer{
-    padding: 0px 10vw;
-  }
+
+
+.accountMain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+
+.formDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  margin: 50px 0px;
+}
+
+.formDiv img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.registerForm{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 50px 0;
+}
+
+.registerForm h1{
+  margin-bottom: 20px;
+}
+
+.registerForm input{
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+}
+
+.registerForm button{
+  background-color: var(--lOrange);
+  width: 80px;
+  padding: 5px 10px;
+  border: 1px solid var(--grey);
+  border-radius: 5px;
+}
+
+
+
+
+@media (width > 1024px){
+    #cover{
+      width: 1024px;
+    }
+    .coverText{
+      font-size: 40px;
+    }
+    footer{
+      padding: 0px 10vw;
+    }
+  }
 
 @media (width < 768px){
   .coverText{
@@ -533,6 +587,10 @@ footer{
   }
   #searchBox{
     width: 70vw;
+  }
+  .formDiv{
+    width: 90vw;
+    height: 70vh;
   }
 
 }
@@ -588,17 +646,4 @@ footer{
   .navbar{
     padding: 0px 10vw;
   }
-}
-
-
-
-.accountMain{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.formDiv{
-  display: flex;
-  width: 80vw;
 }
