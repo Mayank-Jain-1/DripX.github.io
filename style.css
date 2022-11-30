@@ -399,6 +399,9 @@ footer{
   .coverText{
     font-size: 40px;
   }
+  footer{
+    padding: 0px 10vw;
+  }
 }
 
 @media (width < 768px){
@@ -471,5 +474,11 @@ footer{
 
   .footerEnd{
     padding-bottom: 10px;
+  }
+}
+
+@media (width>1760px){
+  footer{
+    padding: 0px 15vw;
   }
 }
