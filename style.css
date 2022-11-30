@@ -519,6 +519,7 @@ footer{
 
 .registerForm h1{
   margin-bottom: 20px;
+  font-size: 40px;
 }
 
 .registerForm input{
@@ -537,7 +538,9 @@ footer{
   border-radius: 5px;
 }
 
-
+#clickHere{
+  color: var(--lOrange);
+}
 
 
 @media (width > 1024px){
