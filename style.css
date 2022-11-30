@@ -509,7 +509,7 @@ footer{
   object-fit: cover;
 }
 
-.registerForm{
+.Form{
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -517,12 +517,12 @@ footer{
   margin: 50px 0;
 }
 
-.registerForm h1{
+.Form h1{
   margin-bottom: 20px;
   font-size: 40px;
 }
 
-.registerForm input{
+.Form input{
   padding: 10px;
   margin-bottom: 20px;
   border-radius: 5px;
@@ -530,7 +530,7 @@ footer{
   width: 200px;
 }
 
-.registerForm button{
+.Form button{
   background-color: var(--lOrange);
   width: 80px;
   padding: 5px 10px;
