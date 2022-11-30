@@ -313,7 +313,7 @@ footer{
 }
 
 .link{
-  color:white;
+  color: #dddddd;
   text-decoration: none;
   font-size: 13px;
   margin-bottom: 15px;
@@ -327,6 +327,23 @@ footer{
   font-size: 14px;
   margin-bottom: 20px;
 }
+
+
+.socialLinks{
+  padding: 30px;
+}
+.socialLink{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#54595d;
+  background-color: #dddddd;
+  padding: 5px;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
 
 @media (width > 1024px) {
   #cover{
@@ -372,5 +389,11 @@ footer{
 @media (786px< width <880px) {
   .productItem{
     width: 300px;
+  }
+}
+
+@media (width<480px){
+  .footerLinks{
+    flex-direction: column;
   }
 }
