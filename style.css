@@ -500,6 +500,7 @@ footer{
   justify-content: center;
   align-items: center;
   width: 80vw;
+  max-width: 1000px;
   margin: 50px 0px;
 }
 
@@ -593,7 +594,7 @@ footer{
   }
   .formDiv{
     width: 90vw;
-    height: 70vh;
+    height: 400px;
   }
 
 }
