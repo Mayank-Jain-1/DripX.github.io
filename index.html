@@ -31,7 +31,10 @@
       <div id="navigationDiv" class="navItem">
         <ul class="navigationList">
           <li id="accountsNavLink">
-            <button class="navigationLink" onclick="toggleDisplay('accountsDropdown')">
+            <button
+              class="navigationLink"
+              onclick="toggleDisplay('accountsDropdown')"
+            >
               <i class="zmdi zmdi-account-o"></i>
               <span>Account</span>
             </button>
@@ -41,10 +44,10 @@
             </div>
           </li>
           <li>
-            <a class="navigationLink" href=""
-              ><i class="zmdi zmdi-search"></i>
+            <button class="navigationLink" onclick="toggleDisplay('search')">
+              <i class="zmdi zmdi-search"></i>
               <span>Search</span>
-            </a>
+            </button>
           </li>
           <li>
             <a class="navigationLink" href="">
@@ -61,6 +64,27 @@
         </ul>
       </div>
     </nav>
+    <div id="search" class="noDispla">
+      <div class="searchDiv">
+        <i class="zmdi zmdi-search zmdi-hc-2x"></i>
+        <input
+          id="searchBox"
+          type="text"
+          placeholder="Enter Item Name.."
+        />
+        <button id="cancelSearch" onclick="toggleDisplay('search')">Cancel
+        </button>
+      </div>
+      <div class="mostSearched">
+        <h3>Most Searched</h3>
+        <ul>
+          <li>Air Force 1</li>
+          <li>Jordan</li>
+          <li>Air Max</li>
+          <li>Blazer</li>
+        </ul>
+      </div>
+    </div>
 
     <div class="main">
       <div id="cover">
