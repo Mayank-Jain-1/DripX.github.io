@@ -292,35 +292,38 @@
 
 footer{
   background-color: var(--grey);
-  display: flex;
-  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .footerLinks{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
-.footerLinks h3{
-  color:  orangered;
-  font-size: 20px;
-  font-family: sans-serif;
-}
-
-.footerLink{
-  border-left: 2px solid #3c444c;
-  padding-left: 30px;
+.leftLinks{
+  display: flex;
 }
 
 .list{
   display: flex;
   flex-direction: column;
+  color: white;padding: 30px;
 }
 
-.list a{
-  color: var(--lGrey);
+.link{
+  color:white;
   text-decoration: none;
-  margin-top: 10px;
+  font-size: 13px;
+}
+
+.bigLink{
+  color:white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 20px;
 }
 
 @media (width > 1024px) {
