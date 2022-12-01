@@ -25,3 +25,16 @@ document.querySelectorAll(".carousel").forEach(carousel => {
   buttons[0].classList.add("carouselSpanSelected");
 
 })
+
+function toggleDisplay(id){
+  const item = document.getElementById(id);
+  console.log(item.classList);
+  if (item.classList.contains("noDisplay")){
+    item.classList.remove("noDisplay");
+  }
+  else{
+    item.classList.add("noDisplay");
+  }
+  console.log(item.classList);
+}
+

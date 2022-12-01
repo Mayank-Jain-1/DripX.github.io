@@ -31,11 +31,11 @@
       <div id="navigationDiv" class="navItem">
         <ul class="navigationList">
           <li id="accountsNavLink">
-            <a class="navigationLink" href="">
+            <button class="navigationLink" onclick="toggleDisplay('accountsDropdown')">
               <i class="zmdi zmdi-account-o"></i>
               <span>Account</span>
-            </a>
-            <div class="accountsDropdown noDisplay">
+            </button>
+            <div id="accountsDropdown" class="noDisplay">
               <a href="">Login</a>
               <a href="">Sign Up</a>
             </div>

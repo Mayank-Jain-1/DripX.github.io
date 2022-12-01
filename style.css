@@ -54,6 +54,8 @@
   list-style: none;
   text-decoration: none;
   transition: 0.2s;
+  background-color: transparent;
+  border: none;
 }
 
 /* #accountsNavLink{
@@ -66,11 +68,10 @@
   display: none !important;
 }
 
-.accountsDropdown{
+#accountsDropdown{
   position: absolute;
   top: 50px;
   z-index: 1;
-  /* transform: translateY(10px); */
   background-color: var(--lOrange);
   display: flex;
   flex-direction: column;
@@ -78,12 +79,18 @@
   border-radius: 5px;
 }
 
-.accountsDropdown a{
+#accountsDropdown a{
   color: white; 
-  /* text-decoration: none; */
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   padding: 5px 20px;
   font-size: 16px;
   text-align: center;
+}
+
+#accountsDropdown a:hover{
+  color: #3c444c;
 }
 
 .navigationLink:hover{
