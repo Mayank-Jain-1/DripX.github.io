@@ -331,7 +331,10 @@ footer{
 
 
 .socialLinks{
+  display: flex;
   padding: 30px;
+  height: max-content;
+  flex-wrap: wrap;
 }
 .socialLink{
   display: flex;
@@ -343,6 +346,8 @@ footer{
   border-radius: 50%;
   margin-left: 5px;
   margin-bottom: 10px;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 .footerEnd{
@@ -375,7 +380,18 @@ footer{
   margin: 5px 0px 5px 20px;
 }
 
+.link:hover{
+  color: var(--lOrange);
+}
 
+.bigLink:hover{
+  color: var(--dOrange);
+}
+
+.socialLink:hover{
+  color: white;
+  background-color: var(--orange);
+}
 @media (width > 1024px) {
   #cover{
     width: 1024px;
@@ -431,21 +447,29 @@ footer{
     flex-direction: column;
   }
   .copyright{
-    font-size: 15px;
+    font-size: 14px;
     margin:0;
   }
 
   .docsLink{
     margin-left: 0;
-    font-size: 14px;
+    font-size: 13px;
     margin-top: 10px;
   }
 
   .docs{
     flex-direction: column;
-    font-size: 17px;
     width: 100%;
     justify-content: space-between;
     margin-top: 15px;
+  }
+
+  .socialLink{
+    padding: 8px;
+    font-size: 30px;
+  }
+
+  .footerEnd{
+    padding-bottom: 10px;
   }
 }
