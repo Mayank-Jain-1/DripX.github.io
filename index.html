@@ -30,22 +30,34 @@
 
       <div id="navigationDiv" class="navItem">
         <ul class="navigationList">
-          <a class="navigationLink" href="">
-            <i class="zmdi zmdi-account-o"></i>
-            <span>Account</span>
-          </a>
-          <a class="navigationLink" href=""
-            ><i class="zmdi zmdi-search"></i>
-            <span>Search</span>
-          </a>
-          <a class="navigationLink" href="">
-            <i class="zmdi zmdi-favorite-outline"></i>
-            <span>Wishlist</span>
-          </a>
-          <a class="navigationLink" href="">
-            <i class="zmdi zmdi-shopping-cart"></i>
-            <span>Your Cart (2)</span>
-          </a>
+          <li id="accountsNavLink">
+            <a class="navigationLink" href="">
+              <i class="zmdi zmdi-account-o"></i>
+              <span>Account</span>
+            </a>
+            <div class="accountsDropdown noDisplay">
+              <a href="">Login</a>
+              <a href="">Sign Up</a>
+            </div>
+          </li>
+          <li>
+            <a class="navigationLink" href=""
+              ><i class="zmdi zmdi-search"></i>
+              <span>Search</span>
+            </a>
+          </li>
+          <li>
+            <a class="navigationLink" href="">
+              <i class="zmdi zmdi-favorite-outline"></i>
+              <span>Wishlist</span>
+            </a>
+          </li>
+          <li>
+            <a class="navigationLink" href="">
+              <i class="zmdi zmdi-shopping-cart"></i>
+              <span>Your Cart (2)</span>
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -210,10 +222,18 @@
           </div>
         </div>
         <div class="socialLinks">
-          <a target="_blank" href="https://www.facebook.com/" class="socialLink">
+          <a
+            target="_blank"
+            href="https://www.facebook.com/"
+            class="socialLink"
+          >
             <i class="zmdi zmdi-facebook-box"></i>
           </a>
-          <a target="_blank" href="https://www.instagram.com/xmayank_jainx/" class="socialLink">
+          <a
+            target="_blank"
+            href="https://www.instagram.com/xmayank_jainx/"
+            class="socialLink"
+          >
             <i class="zmdi zmdi-instagram"></i>
           </a>
           <a target="_blank" href="https://twitter.com/" class="socialLink">
@@ -227,8 +247,8 @@
 
       <div class="footerEnd">
         <div class="copyright">
-            <i class="zmdi zmdi-pin"></i>
-            <span>India</span>
+          <i class="zmdi zmdi-pin"></i>
+          <span>India</span>
           <p>&copy; 2022 Dripx, Inc. All Rights Reserved</p>
         </div>
         <div class="docs">

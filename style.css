@@ -56,6 +56,36 @@
   transition: 0.2s;
 }
 
+/* #accountsNavLink{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+.noDisplay{
+  display: none !important;
+}
+
+.accountsDropdown{
+  position: absolute;
+  top: 50px;
+  z-index: 1;
+  /* transform: translateY(10px); */
+  background-color: var(--lOrange);
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  border-radius: 5px;
+}
+
+.accountsDropdown a{
+  color: white; 
+  /* text-decoration: none; */
+  padding: 5px 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
 .navigationLink:hover{
   color: var(--lOrange);
   transition: smooth;
