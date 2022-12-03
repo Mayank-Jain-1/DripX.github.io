@@ -509,6 +509,9 @@ footer{
   .navigationLink span{
     display: none;
   }
+  #accountsDropdown{
+    transform: translateX(-30px);
+  }
   .navigationLink{
     margin: 7px;    
   }
