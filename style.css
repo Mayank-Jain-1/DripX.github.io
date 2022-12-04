@@ -58,12 +58,6 @@
   border: none;
 }
 
-/* #accountsNavLink{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
-
 .noDisplay{
   visibility: hidden;
   opacity: 0 !important;
@@ -328,8 +322,8 @@
   width: 600px;
   max-width: 90vw;
   max-height: 60vw;
-  min-width: 30vw;
-  min-height: 20vw;
+  /* min-width: 30vw; */
+  /* min-height: 20vw; */
 }
 
 .carouselItem img{
@@ -544,18 +538,6 @@ footer{
 }
 
 
-@media (width > 1024px){
-    #cover{
-      width: 1024px;
-    }
-    .coverText{
-      font-size: 40px;
-    }
-    footer{
-      padding: 0px 10vw;
-    }
-  }
-
 @media (width < 768px){
   .coverText{
     font-size: 5vw;
@@ -563,7 +545,7 @@ footer{
   .navigationList{
     margin: 0;
   }
-
+  
   .navigationLink span{
     display: none;
   }
@@ -596,7 +578,7 @@ footer{
     width: 90vw;
     height: 400px;
   }
-
+  
 }
 
 @media (786px< width <880px) {
@@ -616,25 +598,25 @@ footer{
     font-size: 14px;
     margin:0;
   }
-
+  
   .docsLink{
     margin-left: 0;
     font-size: 13px;
     margin-top: 10px;
   }
-
+  
   .docs{
     flex-direction: column;
     width: 100%;
     justify-content: space-between;
     margin-top: 15px;
   }
-
+  
   .socialLink{
     padding: 8px;
     font-size: 30px;
   }
-
+  
   .footerEnd{
     padding-bottom: 10px;
   }
@@ -642,6 +624,22 @@ footer{
     width: 60vw;
   }
 }
+
+@media (width > 1024px){
+    #cover{
+      width: 1024px;
+    }
+    .coverText{
+      font-size: 40px;
+    }
+    footer{
+      padding: 0px 10vw;
+    }
+    .carouselItem{
+      width: 800px;
+      height: 500px;
+    }
+  }
 
 @media (width>1760px){
   footer{
