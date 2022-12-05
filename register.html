@@ -39,7 +39,7 @@
                 onclick="toggleDisplay('accountsDropdown')"
               >
                 <i class="zmdi zmdi-account-o"></i>
-                <span>Account</span>
+                <span id="account-name">Account</span>
               </button>
               <div id="accountsDropdown" class="noDisplay">
                 <a href="login.html">Login</a>
@@ -94,7 +94,12 @@
           src="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFuJTIwd29ya2luZyUyMG9uJTIwY29tcHV0ZXJ8ZW58MHx8MHx8&w=1000&q=80"
           alt=""
         />
-        <form method="POST" action="https://script.google.com/macros/s/AKfycbz8e0o-HfsrCvRzPwyAT2I_JEpVzUWDY8TLjkasfEzwka9rQ-oZT9yGYnu7biAf8G8Y/exec" class="Form">
+        <form
+          name="google-sheet"
+          method="POST"
+          action="https://script.google.com/macros/s/AKfycbz8e0o-HfsrCvRzPwyAT2I_JEpVzUWDY8TLjkasfEzwka9rQ-oZT9yGYnu7biAf8G8Y/exec"
+          class="Form"
+        >
           <h1>Register</h1>
           <input type="text" name="Name" placeholder="Name" />
           <input type="email" name="Email" placeholder="Email" />
@@ -105,8 +110,10 @@
             placeholder="Confirm Password"
           />
           <button>Submit</button>
-          <br>
-          <p>Have an account? Click <a id="clickHere" href="login.html">Here</a></p>
+          <br />
+          <p>
+            Have an account? Click <a id="clickHere" href="login.html">Here</a>
+          </p>
         </form>
       </div>
     </div>
@@ -176,5 +183,23 @@
       </div>
     </footer>
     <script src="index.js"></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbz8e0o-HfsrCvRzPwyAT2I_JEpVzUWDY8TLjkasfEzwka9rQ-oZT9yGYnu7biAf8G8Y/exec";
+      const form = document.forms["google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        console.log(e.paramater);
+        e.preventDefault();
+        fetch(scriptURL, {
+          method: "POST",
+          body: new FormData(form),
+        })
+          .then((response) => {alert("Thanks for your Registration. We will get to you through email.");
+          window.location = "http://localhost:5500";
+        })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
