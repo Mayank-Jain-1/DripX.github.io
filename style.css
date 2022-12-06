@@ -322,8 +322,6 @@
   width: 600px;
   max-width: 90vw;
   max-height: 60vw;
-  /* min-width: 30vw; */
-  /* min-height: 20vw; */
 }
 
 .carouselItem img{
@@ -532,6 +530,11 @@ footer{
   border: 1px solid var(--grey);
   border-radius: 5px;
 }
+.Form button:hover{
+  cursor:pointer;
+  background-color: #fca287;
+}
+
 
 #clickHere{
   color: var(--lOrange);
