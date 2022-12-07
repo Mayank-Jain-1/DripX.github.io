@@ -33,8 +33,14 @@
   margin-left: 10px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: 50px;
   width: 200px;
+}
+
+.wishlistItemPrice p{
+  font-family: "Roboto";
+  font-size: 12px;
 }
 
 .wishlistItemButtons{
@@ -57,4 +63,24 @@
 
 .removeBtn{
   background-color: red;
+}
+
+
+@media (width<768px) {
+  .wishlistItem img{
+    width: 150px;
+  }
+  .wishlistItemDesc{
+    padding: 5px;
+  }
+  .wishlistItemDesc h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .fullDesc{
+    display: none;
+  }
+  .smallDesc{
+    display: block;
+  }
 }
