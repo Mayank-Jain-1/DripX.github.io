@@ -110,7 +110,7 @@
 }
 
 
-@media (width<768px) {
+@media (width<=768px) {
 
   .wishlistItems{
     flex-direction: row;

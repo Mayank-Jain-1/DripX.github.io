@@ -64,6 +64,10 @@
   transition: opacity 0.2s linear;
 }
 
+.remove{
+  display: none !important;
+}
+
 #accountsDropdown{
   position: absolute;
   top: 50px;
