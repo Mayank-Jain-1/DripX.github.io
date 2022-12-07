@@ -10,7 +10,7 @@
 
 .wishlistHeading h1{
   font-size: 37px;
-  color: #ff7e55;
+  color: #ff5d2c;
   white-space: nowrap;
   padding: 1px 5px;
   border-bottom: 2px solid #ff7e55;
@@ -48,9 +48,7 @@
 }
 
 .wishlistItem img{
-  /* object-fit: cover; */
   width: 200px;
-  /* height: 200px; */
 }
 
 .wishlistItemDesc{
@@ -88,6 +86,7 @@
   height: 40px;
   border-radius: 50%;
   border: none;
+  cursor: pointer;
 }
 
 .addCartBtn{
@@ -95,8 +94,16 @@
   margin-right: 10px;
 }
 
+.addCartBtn:hover{
+  background-color: #989da3;
+}
+
 .removeBtn{
-  background-color: red;
+  background-color: #ff2626;
+}
+
+.removeBtn:hover{
+  background-color: #ff7a6c;
 }
 
 .wishlistItemButtonsSmall{
