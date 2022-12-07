@@ -38,14 +38,7 @@ function toggleDisplay(id){
   console.log(item.classList);
 }
 
-function toggleRemove(id){
+function remove(id){
   const item = document.getElementById(id);
-  console.log(item.classList);
-  if (item.classList.contains("remove")){
-    item.classList.remove("remove");
-  }
-  else{
-    item.classList.add("remove");
-  }
-  console.log(item.classList);
+  item.remove();
 }
