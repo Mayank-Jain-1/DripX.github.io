@@ -9,7 +9,7 @@
     />
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="wishlist.css">
+    <link rel="stylesheet" href="wishlist.css" />
     <script
       src="https://kit.fontawesome.com/fb23b13339.js"
       crossorigin="anonymous"
@@ -90,20 +90,38 @@
 
     <div class="main wishlistMain">
       <h1>Your Wishlist</h1>
+      <p>Your favourite items will be displayed here</p>
       <div class="wishlistItems">
         <div class="wishlistItem">
-          <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/1c2b651c-04dd-4a18-a609-7ddc221dac2c/sb-force-58-skate-shoe-DvWCT6.png" alt="">
+          <img
+            src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/1c2b651c-04dd-4a18-a609-7ddc221dac2c/sb-force-58-skate-shoe-DvWCT6.png"
+            alt=""
+          />
+          <!-- <div> -->
           <div class="wishlistItemDesc">
-          <h3>Air Jordan 1 Mid</h3>
-            <p >Throw some colour into your black-and-white shoe game with this picture-perfect AJ1. Plush foam and soft Air give you the cloud-like feel.</p>
+            <h3>Air Jordan 1 Mid</h3>
+            <p class="fullDesc">
+              Throw some colour into your black-and-white shoe game with this
+              picture-perfect AJ1. Plush foam and soft Air give you the
+              cloud-like feel.
+            </p>
+            <p class="smallDesc noDisplay"> -->
+              Older Kids' Shoes
+            </p>
           </div>
           <div class="wishlistItemPrice">
             <h1>₹6000</h1>
+            <p>Mrp. Inc of all Tax</p>
             <div class="wishlistItemButtons">
-              <button>Remove</button>
-              <button>Add to cart</button>
+              <button class="addCartBtn wishlistItemBtn">
+                <i class="zmdi zmdi-shopping-cart-plus zmdi-hc-lg"></i>
+              </button>
+              <button class="removeBtn wishlistItemBtn">
+                <i class="zmdi zmdi-delete zmdi-hc-lg"></i>
+              </button>
             </div>
           </div>
+          <!-- </div> -->
         </div>
       </div>
     </div>
