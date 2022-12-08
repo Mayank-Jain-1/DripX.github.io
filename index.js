@@ -28,14 +28,24 @@ document.querySelectorAll(".carousel").forEach(carousel => {
 
 function toggleDisplay(id){
   const item = document.getElementById(id);
-  console.log(item.classList);
   if (item.classList.contains("noDisplay")){
     item.classList.remove("noDisplay");
   }
   else{
     item.classList.add("noDisplay");
   }
-  console.log(item.classList);
+  if(id == 'accountsDropdown'){
+    const search = document.getElementById("search");
+    if (!search.classList.contains("noDisplay"))
+    search.classList.add("noDisplay");
+  }
+  if(id == 'search'){
+    const accountsDropdown = document.getElementById("accountsDropdown");
+    if (!accountsDropdown.classList.contains("noDisplay")){
+      console.log('hello');
+      accountsDropdown.classList.add("noDisplay");
+    }
+  }
 }
 
 function remove(id){
