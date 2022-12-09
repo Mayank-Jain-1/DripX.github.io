@@ -1,0 +1,63 @@
+:root{
+  --orange: #ff5722;
+  --lOrange: #ff7e55;
+  --dOrange: #ee3900;
+  --grey: #565d64;
+  --lGrey: #eeeeee;
+  --navbarHeight: 64px;
+}
+
+.contact{
+  height: 400px;
+  position: relative;
+  /* max-width: 1200px; */
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.2);
+}
+
+.information{
+  width: 70vw;
+  padding: 40px;
+}
+
+.contact h1{
+  color: var(--lOrange);
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.contact p{
+  font-family: "Roboto";
+  font-size: 20px;
+  margin-left: 10px;
+  line-height: 30px;
+}
+
+.contact button{
+  margin-top: 30px;
+  padding: 15px;
+  font-size: 17px;
+  width: 200px;
+  margin-left: 10px;
+  background-color: #565d64;
+  color: white;
+  font-weight: 800;
+  border: none;
+  font-family: "Roboto";
+}
+
+.buttonArrow{
+  font-size: 20px;
+  font-weight: 800;
+  margin-left: 10px;
+}
+
+.phone img{
+  position: absolute;
+  z-index: -1;
+  width: 600px;
+  top:0;
+  right: -100px;
+  object-fit:contain;
+}
