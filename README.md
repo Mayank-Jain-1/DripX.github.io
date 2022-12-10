@@ -27,6 +27,11 @@ A project i enjoyed creating for once 😊
 ## Mentions
 THis is a list of jobs i really enjoyed during the 15 days of creating of this project
 - I really enjoyed the Search bar and its Javascript part. Really like it
-- I enjoyed adding the responsiveness to each of the element bus a speacial mention to the responsiveness of the *footer*
+- I enjoyed adding the responsiveness to each of the element bus a speacial mention to the responsiveness of the *footer* . Which i tried to clone with best possible accuracy if nike.com(nike.com)
 - Liked creating the wishlist part.
 - Most interesting design was obviously the contact us page
+- I loved the underline animation in the navigation links.
+
+## Thing i learnt
+- A very unusual type of data storage. I linked the registration form to google sheets. I knew it is not a very practic thing, but still went for it and learnt about google sheets extensions too.
+- New css features and animation tricks. I learnt from a website the underline animation which looks really cool. 
