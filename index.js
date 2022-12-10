@@ -42,7 +42,6 @@ function toggleDisplay(id){
   if(id == 'search'){
     const accountsDropdown = document.getElementById("accountsDropdown");
     if (!accountsDropdown.classList.contains("noDisplay")){
-      console.log('hello');
       accountsDropdown.classList.add("noDisplay");
     }
   }
