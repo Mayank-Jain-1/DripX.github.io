@@ -6,11 +6,11 @@
   --lGrey: #eeeeee;
   --navbarHeight: 64px;
 }
-
+/* 
 .contact{
   min-height: 400px;
   position: relative;
-  /* max-width: 1200px; */
+  max-width: 1200px;
   width: 90vw;
   display: flex;
   align-items: center;
@@ -78,4 +78,38 @@
   display: flex;
   flex-direction: column;
   align-items:flex-end;  
+} */
+
+body{
+  font-family: "Lato";
+}
+
+.contactCover{
+  position: relative;
+}
+
+.contactCover img{
+  width: 100vw;
+  height: 300px;
+  object-fit:cover;
+}
+
+.contactCoverDesc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+  color: white;
+}
+
+.contactCover h1{
+  font-size: 40px;
+  margin-bottom: 10px;
 }
