@@ -116,19 +116,20 @@ body{
 
 .contacts{
   display: flex;
+  justify-content: space-between;
 }
-
 .contact{
   padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 400px;
+  width: 47vw;
+  max-width: 400px;
   text-align: center;
   top: -60px;
   position: relative;
-  margin-right: 20px;
+  margin: 0 10px;
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -137,19 +138,20 @@ body{
   
 }
 
-.contactHeading{
-  margin-top: 15px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 700;
-  color:#2d3135;
-  padding-bottom: 20px;
-}
-
 .contact p{
   line-height: 1.75;
   font-weight: 400;
   font-size: 14px;
 }
+
+.contactHeading{
+  margin-top: 15px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700 !important;
+  color:#2d3135;
+  padding-bottom: 20px;
+}
+
 
 .contactLink{
   margin-top: 30px;
@@ -158,4 +160,15 @@ body{
   font-family:Arial, Helvetica, sans-serif;
   font-weight: 700;
   color:#ff7e55;
+}
+
+.emailLink{
+  text-decoration: none;
+  background-color: #ee3900;
+  color: white;
+  margin-top: 30px;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 4px;
 }
