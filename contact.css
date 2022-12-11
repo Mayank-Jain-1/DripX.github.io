@@ -110,7 +110,7 @@ body{
 .mapDiv h1{
   color:#313437;
   margin-bottom: 60px;
-
+  text-align: center;
 }
 
 .map{
@@ -145,4 +145,24 @@ body{
 .map a{
   text-decoration: none;
   color: #ff7e55;
+}
+
+@media (width<=768px) {
+  .map{
+    flex-direction: column;
+    width: 90vw;
+  }
+  .map iframe{
+    width: 90vw;
+    height: 400px;
+  }
+  .mapDesc{
+    padding-bottom: 30px;
+  }
+}
+
+@media (width<= 426px) {
+  .map iframe{
+    height: 300px;
+  }
 }
