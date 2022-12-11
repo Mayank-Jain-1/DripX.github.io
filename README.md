@@ -2,7 +2,9 @@
 
 Link to the Website -> [DripX- An E-Commerce Platform](https://mayank-jain-1.github.io/DripX.github.io/)
 
-A project i enjoyed created for once 😊
+*Note* Click on the DripX Logo on the navbar to direct to the index/home page
+
+A project i enjoyed creating for once 😊
 
 ## Why i created this project? 
 - Initially started for a web development course submission. 📄
