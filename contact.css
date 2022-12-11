@@ -6,79 +6,6 @@
   --lGrey: #eeeeee;
   --navbarHeight: 64px;
 }
-/* 
-.contact{
-  min-height: 400px;
-  position: relative;
-  max-width: 1200px;
-  width: 90vw;
-  display: flex;
-  align-items: center;
-  box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.2);
-  margin: 20px 0px;
-}
-
-.information{
-  width: 100%;
-  padding: 40px;
-}
-
-.contact h1{
-  color: var(--lOrange);
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-.contact p{
-  font-family: "Roboto";
-  font-size: 20px;
-  margin-left: 10px;
-  line-height: 30px;
-  width: 60%;
-}
-
-.contact button{
-  margin-top: 30px;
-  padding: 15px;
-  font-size: 17px;
-  width: 200px;
-  margin-left: 10px;
-  background-color: #565d64;
-  color: white;
-  font-weight: 800;
-  border: none;
-  font-family: "Roboto";
-}
-
-.buttonArrow{
-  font-size: 20px;
-  font-weight: 800;
-  margin-left: 10px;
-}
-
-.phone img{
-  position: absolute;
-  z-index: -1;
-  width: 600px;
-  top:0;
-  right: -100px;
-}
-
-.email{
-}
-
-.email img{
-  position: absolute;
-  z-index: -1;
-  width: 500px;
-  top: 0;
-}
-
-.email .information{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items:flex-end;  
-} */
 
 body{
   font-family: "Lato";
@@ -135,7 +62,7 @@ body{
 }
 
 .contact i{
-  
+  color: #565d64;
 }
 
 .contact p{
@@ -148,7 +75,7 @@ body{
   margin-top: 15px;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 700 !important;
-  color:#2d3135;
+  color:#565d64;
   padding-bottom: 20px;
 }
 
@@ -171,4 +98,51 @@ body{
   font-size: 16px;
   font-weight: 700;
   border-radius: 4px;
+}
+
+.mapDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 10px 60px 10px;
+}
+
+.mapDiv h1{
+  color:#313437;
+  margin-bottom: 60px;
+
+}
+
+.map{
+  display: flex;
+  border: 2px solid rgb(163, 182, 181);
+  max-width: 820px;
+  width: 95vw;
+}
+
+
+.map iframe{
+  width: 600px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.mapDesc{
+  background-color: #f6f9fc;
+  /* width: 320px; */
+  /* height: 100%; */
+  padding: 50px 30px;
+}
+.mapHeading{
+  margin-bottom: 20px;
+}
+
+.map p{
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.map a{
+  text-decoration: none;
+  color: #ff7e55;
 }
