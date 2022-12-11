@@ -1,5 +1,7 @@
 # DripX
 
+Link to the Website -> [DripX- An E-Commerce Platform](https://mayank-jain-1.github.io/DripX.github.io/)
+
 A project i enjoyed created for once 😊
 
 ## Why i created this project? 
@@ -18,7 +20,7 @@ A project i enjoyed created for once 😊
    1. Contact Us Page
 - It is fully responsive, it workd on all the device widths. Tested on ranges 2560px - 320 px
 - It has a little dom manipulaion usning JS. 
-- It has a working Registraton form (Withour form validation, (didnt do because not required in the assignment 🙄)) 
+- It has a working Registration form (Without form validation, (didn't do because not required in the assignment 🙄)) 
 
 ## Mentions
 THis is a list of jobs i really enjoyed during the 15 days of creating of this project
